@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="MyStoreWebApp.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <script src="Scripts/bootstrap.min.js" type="text/javascript"></script>
+    <script src="Scripts/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <div class="container-fluid">
+        <form id="form1" runat="server">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Use .navbar-default for the white and gray color scheme -->
+                    <!-- <nav class="navbar navbar-default"> -->
+                    <!-- Use .navbar-inverse for the black and white color scheme -->
+                    <nav class="navbar navbar-inverse">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <!--Navbar Header Class -->
+                                <a class="navbar-brand" href="Default.aspx">StoreWeb</a>
+                                <!--Navbar Brand Class -->
+                            </div>
+                            <ul class="nav navbar-nav">
+                                <!--Navbar nav Class unorder list -->
+                                <li id="liHome"><a href="Default.aspx">Home</a></li>
+                                <!--list item value and hyperlink Active Class -->
+                                <li id="liProducts"><a href="Products.aspx">Products</a></li>
+                                <!--list item value and hyperlink -->
+                                <li id="liCustomers"><a href="Customers.aspx">Customers</a></li>
+                                <!--list item value and hyperlink -->
+                                <li id="liVendors"><a href="Vendors.aspx">Vendors</a></li>
+                                <!--list item value and hyperlink -->
+                                <li id="liAbout"><a href="About.aspx">About</a></li>
+                                <!--list item value and hyperlink -->
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <asp:ContentPlaceHolder ID="MENU" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <asp:ContentPlaceHolder ID="MESSAGE" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="BODY" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <asp:ContentPlaceHolder ID="FOOTER" runat="server">
+                <div class="navbar-fixed-bottom panel-footer">Interactive Technologies, WebStore 1/2/2018 </div>
+            </asp:ContentPlaceHolder>
+        </form>
+    </div>
+</body>
+</html>
