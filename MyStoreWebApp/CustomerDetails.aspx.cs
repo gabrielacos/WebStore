@@ -37,7 +37,7 @@ namespace MyStoreWebApp
         strForma)
         {
             SqlConnection conn_string = new
-           SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["StoreConnectionStrin"].ConnectionString);
+           SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["connectionstringStoreDB"].ConnectionString);
 
             SqlCommand sql_comm = new SqlCommand();
             SqlDataReader reader;
