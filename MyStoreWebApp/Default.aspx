@@ -17,6 +17,7 @@
         <div class="col-lg-8">
             <h3>
                 <p>
+                    <h1>ALBERTO COLON</h1>
                     Welcome to the Store home page!<br />
                     <br />
                     Here you can see all products, customer and visitor as well as details for each of your selection.</h3>
