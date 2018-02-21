@@ -8,7 +8,7 @@
 
     <div class="row">
         <div class="col-lg-8">
-            <h1>Customer Details</h1>
+            <h1>Customer Detail</h1>
         </div>
         <div class="col-lg-4">
             <asp:Image ID="Image1" runat="server" Height="60px" ImageUrl="~/Resources/my_logo.png" Width="59px" />
